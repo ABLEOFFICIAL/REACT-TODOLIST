@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "04f1",
+      "title": "sjjjjjs",
+      "content": "sbjbjbjbjbjbj",
+      "completed": true
+    },
+    {
+      "id": "0a0b",
+      "title": "vhvhvhv",
+      "content": "hvhvh",
+      "completed": true
+    },
+    {
+      "id": "5cbc",
+      "title": "josh",
+      "content": "go to work",
+      "completed": true
+    },
+    {
+      "id": "bdbf",
+      "title": "tomorrow",
+      "content": "the curve africa interview",
+      "completed": false
+    },
+    {
+      "id": "efca",
+      "title": "xhhhhxh",
+      "content": "xhhhhhxh",
+      "completed": false
+    }
+  ]
+}
