@@ -11,10 +11,13 @@ const App = () => {
   const [todoListContainer, setTodoListContainer] = React.useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [showSideBar, setShowSideBar] = useState(false);
+  const [allTask, setAllTask] = useState(true);
+  const [completedTask, setCompletedTask] = useState(false);
+  const [uncompletedTask, setUncompletedTask] = useState(false);
 
   return (
     <div
-      onClick={() => {
+      onClick={(e) => {
         if (showSideBar) {
           setShowSideBar(false);
         }
@@ -22,7 +25,16 @@ const App = () => {
       className="bg-[#f5f5f5] container p-5 w-screen relative min-h-screen"
     >
       <AppLogo />
-      <SideBar showSideBar={showSideBar} />
+      <SideBar
+        allTask={allTask}
+        completedTask={completedTask}
+        uncompletedTask={uncompletedTask}
+        setAllTask={setAllTask}
+        setUncompletedTask={setUncompletedTask}
+        setCompletedTask={setCompletedTask}
+        setShowSideBar={setShowSideBar}
+        showSideBar={showSideBar}
+      />
       <SearchInput
         showSideBar={showSideBar}
         setShowSideBar={setShowSideBar}
@@ -32,6 +44,9 @@ const App = () => {
       />
       <AddNote setShowModal={setShowModal} />
       <TodoListApp
+        allTask={allTask}
+        completedTask={completedTask}
+        uncompletedTask={uncompletedTask}
         todoListContainer={todoListContainer}
         setTodoListContainer={setTodoListContainer}
       />

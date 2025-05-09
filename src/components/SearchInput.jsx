@@ -24,7 +24,8 @@ const SearchInput = ({
   return (
     <div className="relative w-[100%] mx-auto my-3">
       <MenuBar
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           setShowSideBar(true);
         }}
       />

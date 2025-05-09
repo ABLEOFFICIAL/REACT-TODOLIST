@@ -1,10 +1,10 @@
 import React from "react";
 import { TbXboxX } from "react-icons/tb";
 
-const statusX = () => {
+const statusX = ({ onClick }) => {
   return (
     <>
-      <TbXboxX className="text-lg" />
+      <TbXboxX onClick={onClick()} className="text-lg" />
     </>
   );
 };
